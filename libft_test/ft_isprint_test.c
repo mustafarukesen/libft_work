@@ -1,7 +1,7 @@
 #include<stdio.h>
-int ft_isprint(int a)
+int ft_isprint(int c)
 {
-    if (a >= 32 && a <= 126)
+    if (c >= 32 && c <= 126)
         return (1);
     else
         return (0);

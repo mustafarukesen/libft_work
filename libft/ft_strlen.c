@@ -6,15 +6,17 @@
 /*   By: mesen <mesen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 14:47:32 by mesen             #+#    #+#             */
-/*   Updated: 2022/10/04 14:49:43 by mesen            ###   ########.fr       */
+/*   Updated: 2022/10/06 16:50:56 by mesen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *a)
+#include "libft.h"
+
+size_t ft_strlen(char *c)
 {
-    int count;
+    size_t count;
     
-    while (a != '\0')
+    while (c != '\0')
     {
         count++;
     }

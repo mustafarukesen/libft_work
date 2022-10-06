@@ -6,7 +6,16 @@
 /*   By: mesen <mesen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 14:34:50 by mesen             #+#    #+#             */
-/*   Updated: 2022/10/04 14:35:53 by mesen            ###   ########.fr       */
+/*   Updated: 2022/10/06 16:40:39 by mesen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+int ft_isalnum(int c)
+{
+    if((ft_isalpha(c) != 0) || (ft_isdigit(c) != 0))
+        return (1);
+    else
+        return (0);
+}

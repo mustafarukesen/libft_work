@@ -1,10 +1,9 @@
 #include<stdio.h>
-int ft_strlen(char *a)
+size_t ft_strlen(char *c)
 {
-    int count;
+    size_t count;
     
-    count = 0;
-    while (a[count] != '\0')
+    while (c != '\0')
     {
         count++;
     }

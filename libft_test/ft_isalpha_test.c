@@ -1,7 +1,7 @@
 #include<stdio.h>
-int ft_isalpha(int a)
+int ft_isalpha(int c)
 {
-    if ((a <= 'A' && a >= 'Z') || (a <= 'a' && a >= 'z'))
+    if ((c <= 'A' && c >= 'Z') || (c <= 'a' && c >= 'z'))
     {
         return (1);
     }
