@@ -5,20 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mesen <mesen@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/04 14:47:32 by mesen             #+#    #+#             */
-/*   Updated: 2022/10/06 16:50:56 by mesen            ###   ########.fr       */
+/*   Created: 2022/10/21 16:44:16 by mesen             #+#    #+#             */
+/*   Updated: 2022/10/21 16:44:16 by mesen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(char *c)
+size_t	ft_strlen(const char *c)
 {
-    size_t count;
-    
-    while (c != '\0')
-    {
-        count++;
-    }
-    return count;
+	size_t	count;
+
+	count = 0;
+	while (c[count])
+	{
+		count++;
+	}
+	return (count);
 }
