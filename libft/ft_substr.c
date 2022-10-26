@@ -14,21 +14,26 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*dizi;
-	size_t	i;
+	size_t	a;
+	size_t	b;
+	char	*son;
 
-	i = 0;
-	if (!s)
+	if (s == NULL)
 		return (NULL);
-	if (ft_strlen(s) < len)
-		len = ft_strlen(s);
-	if (start >= ft_strlen(s))
+	if (start >= ft_strlen(s) || len == 0 || ft_strlen(s) == 0)
 		return (ft_strdup(""));
-	dizi = (char *)malloc(sizeof(char) * (len + 1));
-	if (!dizi)
+	a = 0;
+	while ((a < len) && s[start + a] != '\0')
+		a++;
+	son = (char *)malloc((sizeof(char) * a) + 1);
+	if (son == NULL)
 		return (NULL);
-	while (len--)
-		dizi[i++] = s[start++];
-	dizi[i] = '\0';
-	return (dizi);
+	b = 0;
+	while (b < a)
+	{
+		son[b] = s[b + start];
+		b++;
+	}
+	son[b] = '\0';
+	return (son);
 }

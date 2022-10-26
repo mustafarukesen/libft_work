@@ -63,6 +63,6 @@ char	**ft_split(char const *s, char c)
 		else
 			s++;
 	}
-	strs[i] = '\0';
+	strs[i] = NULL;
 	return (strs);
 }
